@@ -6,6 +6,7 @@ import Icon from "@/components/ui/icons/Icon";
 import {PlugConnectIcon} from "@/components/ui/icons/icons";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -21,7 +22,7 @@ export default function About() {
                         <h1 className={'text-9xl text-primary font-bold'}>ESSENCE</h1>
                         <p className={'text-2xl'}>of you </p>
                     </div>
-                    <PrimaryButton>Read Essence White Paper <i className='bx  bx-arrow-right-stroke'  ></i> </PrimaryButton>
+                    <Link href={"/paper"}><PrimaryButton>Read Essence White Paper <i className='bx  bx-arrow-right-stroke'  ></i> </PrimaryButton></Link>
                 </div>
 
                 <div className={'flex gap-10'}>
@@ -78,7 +79,7 @@ export default function About() {
                         <p className={'text-5xl font-bold'}>Read Essence White Paper</p>
                         <p>It's a document where we tell details of project</p>
 
-                        <PrimaryButton>Read <i className='bx  bx-arrow-right-stroke'  ></i></PrimaryButton>
+                        <Link href={"/paper"}><PrimaryButton>Read <i className='bx  bx-arrow-right-stroke'  ></i></PrimaryButton></Link>
                     </div>
 
 <div>

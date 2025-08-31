@@ -3,11 +3,14 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import EssenceBubbles from "@/components/ui/other/EssenceBubbles";
 import TransparentButton from "@/components/ui/buttons/TransparentButton";
 import MainHeadMenu from "@/components/ui/navigations/MainHeaderMenu";
+import Link from "next/link";
 
 export default function Home() {
   return (
       <div className={'container m-auto'}>
-        <MainHeadMenu />
+          <div className={'absolute top-0 container'}>
+              <MainHeadMenu />
+          </div>
           <div className={'h-screen w-full flex items-center overflow-hidden gap-20'}>
             <div className={'flex-1 flex flex-col gap-5 z-10'}>
 
@@ -19,7 +22,7 @@ export default function Home() {
 
               <div className={'flex gap-5'}>
                 <PrimaryButton>Join the community</PrimaryButton>
-                <TransparentButton>Learn more</TransparentButton>
+                  <Link href={"/about"}><TransparentButton>Learn more</TransparentButton></Link>
               </div>
             </div>
 
