@@ -1,26 +1,38 @@
 @import "tailwindcss";
+@import "boxicons";
+@import "boxicons/css/boxicons.min.css";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary-color: #0098EA;
+  --primary-color-faded: #2BABF0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.text-primary {
+  color: var(--primary-color)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg-primary {
+  background: var(--primary-color);
 }
+
+.bg-primary-faded {
+  background: var(--primary-color-faded) !important;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
