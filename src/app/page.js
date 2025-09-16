@@ -8,7 +8,7 @@ import Spark from "@/components/ui/icons/vector/spark";
 
 export default function Home() {
   return (
-      <div className={'container m-auto overflow-x-hidden '}>
+      <div className={'container m-auto overflow-x-hidden'}>
           <div className={'absolute top-0 container'}>
               <MainHeadMenu />
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
 
             </div>
 
-            <div className={'hidden max-lg:block'}>
+            <div className={'hidden max-lg:block absolute bottom-0 translate-y-1/4'}>
               <svg width="440" height="408" viewBox="0 0 440 408" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="82.5743" y="8.71619" width="430.443" height="231.859" rx="115.93" transform="rotate(26.362 82.5743 8.71619)" fill="#F6F4EE"/>
 <path d="M178.735 246C161.344 266.538 136.052 316.87 173.034 354.79C173.415 355.18 173.433 355.814 173.055 356.207L154 376" stroke="black" stroke-width="15" stroke-linecap="round"/>
