@@ -41,7 +41,7 @@ export default function Home() {
 
 
             </div>
-            <div className={'flex-1 flex flex-col gap-5 z-10 w-fit text-center justify-center items-center'}>
+            <div className={'flex flex-col gap-5 z-10 w-fit text-center justify-center items-center max-lg:bg-white/80 max-lg:backdrop-blur-xs max-lg:w-fit h-fit max-lg:shadow-sm rounded-xl max-lg:p-10'}>
 
               <Spark size={100} />
               <h1 className={'text-9xl font-bold max-lg:text-7xl'}>Essence</h1>
