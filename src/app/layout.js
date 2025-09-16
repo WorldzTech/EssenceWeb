@@ -1,9 +1,25 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local';
 
-const geistSans = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const productSans = localFont({
+  src: [
+    {
+      path: './fonts/ProductSans-Regular.woff',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-Bold.woff',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/ProductSans-Medium.woff',
+      weight: '500',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-product-sans',
 });
 
 export const metadata = {
@@ -20,7 +36,7 @@ export default function RootLayout({ children }) {
         <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js" async></script>
       </head>
       <body
-        className={`${geistSans.variable} antialiased`}
+        className={`${productSans.className} antialiased`}
       >
         {children}
       </body>
