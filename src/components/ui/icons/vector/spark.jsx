@@ -1,6 +1,6 @@
-export default function Spark({size}) {
+export default function Spark({size, className}) {
   return (
-    <div className="flex">
+    <div className={className + " flex"}>
       <svg
         width={size}
         height={size}

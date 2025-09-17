@@ -5,100 +5,47 @@ import TransparentButton from "@/components/ui/buttons/TransparentButton";
 import MainHeadMenu from "@/components/ui/navigations/MainHeaderMenu";
 import Link from "next/link";
 import Spark from "@/components/ui/icons/vector/spark";
+import Star from "@/components/ui/icons/vector/star";
+import Cubo from "@/components/ui/icons/vector/cubo";
+import SpinningStar from "@/components/ui/icons/animated/SpinningStar";
+import LeftSideHeroSectionBlock from "@/components/extra/index/leftSideHeroSectionBlock";
+import RightSideHeroSectionBlock from "@/components/extra/index/rightSizeHeroSectionBlock";
 
 export default function Home() {
   return (
-      <div className={'container m-auto overflow-x-hidden'}>
+      <div className={'container m-auto'}>
           <div className={'absolute top-0 container'}>
               <MainHeadMenu />
           </div>
-          <div className={'h-screen w-full flex items-center gap-20 justify-center max-lg:p-5 max-lg:flex-col max-lg:gap-0'}>
-            <div className={'max-lg:hidden'}>
-              <svg width="449" height="479" viewBox="0 0 449 479" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="109.459" y="21" width="309" height="309" rx="37" transform="rotate(20.7467 109.459 21)" fill="#F6F4EE"/>
-<g clip-path="url(#clip0_1_558)">
-<path d="M362.35 255.858C364.756 266.102 365.471 284.961 354.447 294.462C351.596 296.919 347.96 298.75 343.367 299.644C342.941 299.727 342.73 300.216 342.972 300.576L352.848 315.249" stroke="black" stroke-width="8.90863" stroke-linecap="round"/>
-<path d="M299.11 255.858C301.516 266.102 302.23 284.961 291.207 294.462C288.356 296.919 284.72 298.75 280.126 299.644C279.701 299.727 279.489 300.216 279.732 300.576L289.608 315.249" stroke="black" stroke-width="8.90863" stroke-linecap="round"/>
-<path d="M407.19 210.424C416.891 221.411 437.777 249.028 443.716 271.596" stroke="black" stroke-width="8.90863" stroke-linecap="round"/>
-<path d="M276.827 86H367.102C391.374 86 411.051 105.677 411.051 129.949V220.223C411.051 244.496 391.374 264.173 367.102 264.173H276.827C252.555 264.173 232.878 244.496 232.878 220.223V129.949C232.878 105.677 252.555 86 276.827 86Z" fill="#00C978"/>
-<path d="M302.959 183.401H380.167V216.66H302.959V183.401Z" fill="#00C978"/>
-<path d="M367.695 216.66C360.807 216.66 355.223 209.215 355.223 200.03C355.223 190.846 360.807 183.401 367.695 183.401C374.584 183.401 380.167 190.846 380.167 200.03C380.167 209.215 374.584 216.66 367.695 216.66Z" fill="#343433"/>
-<path d="M315.431 216.66C308.543 216.66 302.959 209.215 302.959 200.03C302.959 190.846 308.543 183.401 315.431 183.401C322.32 183.401 327.904 190.846 327.904 200.03C327.904 209.215 322.32 216.66 315.431 216.66Z" fill="#343433"/>
-<path d="M237.036 210.127C227.335 221.114 206.449 248.731 200.51 271.299" stroke="black" stroke-width="8.90863" stroke-linecap="round"/>
-</g>
-<rect x="170.259" y="434.884" width="23.5093" height="23.5093" rx="4.05334" transform="rotate(-25.7499 170.259 434.884)" fill="#F6F4EE"/>
-<rect x="192.894" y="423.966" width="23.5093" height="23.5093" rx="4.05334" transform="rotate(-25.7499 192.894 423.966)" fill="#F6F4EE"/>
-<rect x="203.812" y="446.601" width="23.5093" height="23.5093" rx="4.05334" transform="rotate(-25.7499 203.812 446.601)" fill="#F6F4EE"/>
-<rect x="181.177" y="457.519" width="23.5093" height="23.5093" rx="4.05334" transform="rotate(-25.7499 181.177 457.519)" fill="#F6F4EE"/>
-<path d="M224.852 13.1276C225.879 9.43062 231.121 9.43062 232.148 13.1276L234.831 22.7789C235.302 24.4762 236.882 25.624 238.642 25.5481L248.65 25.1167C252.484 24.9515 254.103 29.9368 250.905 32.0564L242.555 37.5898C241.086 38.5629 240.483 40.4201 241.099 42.0705L244.602 51.4552C245.944 55.05 241.703 58.1311 238.699 55.7441L230.856 49.5126C229.476 48.4168 227.524 48.4168 226.144 49.5126L218.301 55.7441C215.297 58.1311 211.056 55.05 212.398 51.4552L215.901 42.0705C216.517 40.4201 215.914 38.5629 214.445 37.5898L206.095 32.0564C202.897 29.9368 204.516 24.9515 208.35 25.1167L218.358 25.5481C220.118 25.624 221.698 24.4762 222.169 22.7789L224.852 13.1276Z" fill="#FFCD6C"/>
-<path d="M337.701 349.471C338.208 347.649 340.792 347.649 341.299 349.471L342.621 354.229C342.853 355.066 343.632 355.632 344.5 355.594L349.433 355.381C351.323 355.3 352.121 357.758 350.545 358.802L346.428 361.53C345.705 362.01 345.407 362.925 345.711 363.739L347.438 368.365C348.099 370.137 346.008 371.656 344.527 370.48L340.661 367.408C339.981 366.867 339.019 366.867 338.339 367.408L334.473 370.48C332.992 371.656 330.901 370.137 331.562 368.365L333.289 363.739C333.593 362.925 333.295 362.01 332.572 361.53L328.455 358.802C326.879 357.758 327.677 355.3 329.567 355.381L334.5 355.594C335.368 355.632 336.147 355.066 336.379 354.229L337.701 349.471Z" fill="#FFCD6C"/>
-<defs>
-<clipPath id="clip0_1_558">
-<rect width="252.411" height="234" fill="white" transform="matrix(-1 0 0 1 448.467 86)"/>
-</clipPath>
-</defs>
-</svg>
+          <section className="relative flex items-center justify-center min-h-screen">
+            <div className={'relative flex-1 flex items-center justify-center'}>
+              {/* Иллюстрации */}
+              {/*<div className={'absolute h-64 bg-[#F6F4EE] aspect-video rounded-full end-0 rotate-[20deg]'}></div>*/}
+              {/*<Star className={"absolute end-1/4"} size={50}/>*/}
+
+              <LeftSideHeroSectionBlock />
+
+              {/* Текст */}
+              <div className="relative text-center max-w-2xl px-6 text-center flex items-center flex-col gap-5">
+                <Spark size={100} />
+                <h1 className={'text-9xl font-bold max-lg:text-7xl'}>Essence</h1>
+                <p className={'text-3xl font-bold max-lg:text-xl'}>Токен нового поколения</p>
+                <PoweredByTON />
 
 
-            </div>
-            <div className={'flex flex-col gap-5 z-10 w-fit text-center justify-center items-center max-lg:bg-white/80 max-lg:backdrop-blur-xs max-lg:w-fit h-fit max-lg:shadow-sm rounded-xl max-lg:p-10'}>
+                <p>Essence — это токен, который станет основой экосистемы игр и сервисов. Его стоимость формируется сообществом и поддерживается реальным пулом TON.</p>
 
-              <Spark size={100} />
-              <h1 className={'text-9xl font-bold max-lg:text-7xl'}>Essence</h1>
-              <p className={'text-3xl font-bold max-lg:text-xl'}>Токен нового поколения</p>
-              <PoweredByTON />
-
-
-              <p>Essence — это токен, который станет основой экосистемы игр и сервисов. Его стоимость формируется сообществом и поддерживается реальным пулом TON.</p>
-
-              <div className={'flex gap-5'}>
-                <PrimaryButton>Присоединиться</PrimaryButton>
-                  <Link href={"/about"}><TransparentButton>Узнать больше</TransparentButton></Link>
+                <div className={'flex gap-5'}>
+                  <PrimaryButton>Присоединиться</PrimaryButton>
+                    <Link href={"/about"}><TransparentButton>Узнать больше</TransparentButton></Link>
+                </div>
               </div>
-            </div>
-            <div className={'max-lg:hidden'}>
-              <svg width="489" height="432" viewBox="0 0 489 432" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="128.913" y="27" width="401" height="216" rx="108" transform="rotate(26.362 128.913 27)" fill="#F6F4EE"/>
-                <path d="M94.0678 205C83.3655 217.639 67.8011 248.612 90.5597 271.948C90.7938 272.188 90.8047 272.578 90.5722 272.82L78.8462 285" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <path d="M145.308 205C156.01 217.639 171.575 248.612 148.816 271.948C148.582 272.188 148.571 272.578 148.803 272.82L160.529 285" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <rect x="27.1538" y="107.154" width="184.615" height="105.846" rx="51.6923" fill="#FF713D"/>
-                <path d="M78.8462 130.508C83.0513 126.816 94.3539 121.647 105.923 130.508" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <path d="M132.385 130.508C136.59 126.816 147.892 121.647 159.462 130.508" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <path d="M92.077 156.385C101.308 165.103 124.938 177.308 145.615 156.385" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <path d="M204.385 143.154C213.718 132.385 232.631 105.677 233.615 85" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <path d="M34.2308 143.154C24.8974 132.385 5.98462 105.677 5 85" stroke="black" stroke-width="9.23077" stroke-linecap="round"/>
-                <circle cx="69" cy="152.692" r="7.38462" fill="#FF8052"/>
-                <circle cx="169.308" cy="152.692" r="7.38462" fill="#FF8052"/>
-                <rect x="92" y="22.3456" width="22.7167" height="22.7167" rx="3.91667" transform="rotate(-28.3879 92 22.3456)" fill="#F6F4EE"/>
-                <rect x="113.363" y="10.8004" width="22.7167" height="22.7167" rx="3.91667" transform="rotate(-28.3879 113.363 10.8004)" fill="#F6F4EE"/>
-                <rect x="124.908" y="32.1636" width="22.7167" height="22.7167" rx="3.91667" transform="rotate(-28.3879 124.908 32.1636)" fill="#F6F4EE"/>
-                <rect x="103.545" y="43.7088" width="22.7167" height="22.7167" rx="3.91667" transform="rotate(-28.3879 103.545 43.7088)" fill="#F6F4EE"/>
-                <path d="M175.553 345.599C177.087 340.08 184.913 340.08 186.447 345.599L190.451 360.008C191.156 362.542 193.514 364.256 196.142 364.142L211.083 363.498C216.806 363.251 219.225 370.694 214.45 373.859L201.983 382.12C199.791 383.573 198.89 386.345 199.81 388.809L205.039 402.82C207.043 408.187 200.711 412.787 196.226 409.224L184.517 399.92C182.458 398.284 179.542 398.284 177.483 399.92L165.774 409.224C161.289 412.787 154.957 408.187 156.961 402.82L162.19 388.809C163.11 386.345 162.209 383.573 160.017 382.12L147.551 373.859C142.775 370.694 145.194 363.251 150.917 363.498L165.858 364.142C168.486 364.256 170.844 362.542 171.549 360.008L175.553 345.599Z" fill="#FFCD6C"/>
-                <path d="M302.982 36.0599C303.691 33.5085 307.309 33.5085 308.018 36.0599L309.869 42.7207C310.195 43.892 311.285 44.6842 312.5 44.6318L319.406 44.3341C322.052 44.22 323.17 47.6606 320.963 49.1234L315.2 52.9423C314.186 53.6138 313.77 54.8956 314.195 56.0346L316.613 62.5113C317.539 64.9923 314.612 67.1187 312.538 65.4713L307.126 61.1707C306.174 60.4144 304.826 60.4144 303.874 61.1707L298.462 65.4713C296.388 67.1187 293.461 64.9923 294.387 62.5113L296.805 56.0346C297.23 54.8956 296.814 53.6138 295.8 52.9423L290.037 49.1234C287.83 47.6606 288.948 44.22 291.594 44.3341L298.5 44.6318C299.715 44.6842 300.805 43.892 301.131 42.7207L302.982 36.0599Z" fill="#FFCD6C"/>
-                </svg>
 
+              <RightSideHeroSectionBlock />
             </div>
 
-            <div className={'hidden max-lg:block absolute bottom-0 translate-y-1/4'}>
-              <svg width="440" height="408" viewBox="0 0 440 408" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="82.5743" y="8.71619" width="430.443" height="231.859" rx="115.93" transform="rotate(26.362 82.5743 8.71619)" fill="#F6F4EE"/>
-<path d="M178.735 246C161.344 266.538 136.052 316.87 173.034 354.79C173.415 355.18 173.433 355.814 173.055 356.207L154 376" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<path d="M262 246C279.391 266.538 304.684 316.87 267.701 354.79C267.32 355.18 267.303 355.814 267.681 356.207L286.735 376" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<rect x="70" y="87" width="300" height="172" rx="84" fill="#FF713D"/>
-<path d="M154 124.951C160.833 118.951 179.2 110.551 198 124.951" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<path d="M241 124.951C247.833 118.951 266.2 110.551 285 124.951" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<path d="M175.5 167C190.5 181.167 228.9 201 262.5 167" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<path d="M358 145.5C373.167 128 403.9 84.6 405.5 51" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<path d="M81.5 145.5C66.3333 128 35.6 84.6 34 51" stroke="black" stroke-width="15" stroke-linecap="round"/>
-<circle cx="138" cy="161" r="12" fill="#FF8052"/>
-<circle cx="301" cy="161" r="12" fill="#FF8052"/>
-<path d="M85.6812 31.5994C88.774 27.8454 94.8464 30.5431 94.134 35.3545L92.2744 47.9154C91.9473 50.1244 93.1868 52.267 95.2646 53.0849L107.08 57.7355C111.606 59.5169 110.917 66.1257 106.121 66.935L93.6 69.0479C91.3982 69.4195 89.7434 71.2604 89.6076 73.4893L88.8358 86.1636C88.5402 91.0185 82.0419 92.4053 79.7901 88.0941L73.9115 76.839C72.8777 74.8597 70.6155 73.8548 68.4538 74.4145L56.1613 77.597C51.4527 78.8161 48.1256 73.0644 51.53 69.5906L60.4176 60.5217C61.9806 58.9268 62.2373 56.4649 61.037 54.5819L54.2116 43.8745C51.5971 39.773 56.0392 34.8315 60.3951 36.9957L71.7665 42.6459C73.7663 43.6395 76.1871 43.1229 77.607 41.3995L85.6812 31.5994Z" fill="#FFCD6C"/>
-<path d="M387.062 267.828C389.199 265.235 393.393 267.099 392.901 270.422L391.617 279.099C391.391 280.625 392.247 282.105 393.682 282.67L401.844 285.883C404.971 287.113 404.495 291.678 401.182 292.238L392.532 293.697C391.011 293.954 389.868 295.225 389.774 296.765L389.241 305.52C389.037 308.874 384.548 309.832 382.993 306.854L378.932 299.079C378.218 297.712 376.655 297.018 375.162 297.404L366.67 299.603C363.418 300.445 361.119 296.472 363.471 294.072L369.611 287.807C370.69 286.706 370.868 285.005 370.038 283.704L365.324 276.308C363.518 273.474 366.586 270.061 369.595 271.556L377.45 275.459C378.832 276.145 380.504 275.789 381.485 274.598L387.062 267.828Z" fill="#FFCD6C"/>
-</svg>
+          </section>
 
-
-            </div>
-          </div>
       </div>
   );
 }
