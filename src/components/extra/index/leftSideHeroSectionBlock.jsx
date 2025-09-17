@@ -38,7 +38,7 @@ export default function LeftSideHeroSectionBlock() {
     }, [bgRef])
 
     return (
-        <div className="absolute start-0 top-1/2">
+        <div className="absolute start-0 top-0 aspect-square">
             <div className="relative h-96 bg-[#F6F4EE] aspect-square rounded-4xl rotate-45" ref={bgRef}>
               <SpinningStar className="absolute left-1/2 top-full -translate-x-1/2 mt-10" size={50} duration={6}/>
               <SpinningStar className="absolute left-1/2 bottom-full -translate-x-1/2 mt-10 rotate-45" size={150} duration={25} direction={-1}/>

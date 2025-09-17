@@ -39,10 +39,10 @@ export default function RightSideHeroSectionBlock() {
     }, [bgRef])
 
     return (
-        <div className="absolute end-0 top-1/2">
-            <div className="relative h-64 bg-[#F6F4EE] aspect-video rounded-full rotate-45" ref={bgRef}>
-              <SpinningStar className="absolute top-0 start-1/2 z-50" size={75} duration={6}/>
-              <SpinningStar className="absolute end-0 top-0 mt-10 translate-x-1/2 rotate-45 z-50" size={110} duration={25} direction={-1}/>
+        <div className="absolute end-0 top-0 aspect-square">
+            <div className="relative w-128 bg-[#F6F4EE] aspect-video rounded-full rotate-45 " ref={bgRef}>
+              <SpinningStar className="absolute start-0 -translate-y-full z-50" size={75} duration={6}/>
+              <SpinningStar className="absolute bottom-0 end-0 mt-10 translate-y-full rotate-45 z-50" size={110} duration={25} direction={-1}/>
               <Pilly ref={cuboRef} className={'pointer-events-none absolute -rotate-45 scale-x-[-1] translate-x-1/2'} size={300} />
             </div>
           </div>
