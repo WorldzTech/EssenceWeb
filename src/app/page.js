@@ -17,7 +17,7 @@ export default function Home() {
           <div className={'absolute top-0 container'}>
               <MainHeadMenu />
           </div>
-          <section className="relative flex items-center justify-center min-h-screen">
+          <section className="relative flex items-center justify-center min-h-screen max-lg:p-5">
             <div className={'relative flex-1 flex items-center justify-center'}>
               {/* Иллюстрации */}
               {/*<div className={'absolute h-64 bg-[#F6F4EE] aspect-video rounded-full end-0 rotate-[20deg]'}></div>*/}
@@ -26,7 +26,7 @@ export default function Home() {
               <LeftSideHeroSectionBlock />
 
               {/* Текст */}
-              <div className="relative text-center max-w-2xl px-6 text-center flex items-center flex-col gap-5">
+              <div className="relative text-center max-w-2xl px-6 text-center flex items-center flex-col gap-5 z-50 bg-white/30 p-10 rounded-3xl backdrop-blur-md border border-gray-100 shadow-sm">
                 <Spark size={100} />
                 <h1 className={'text-9xl font-bold max-lg:text-7xl'}>Essence</h1>
                 <p className={'text-3xl font-bold max-lg:text-xl'}>Токен нового поколения</p>
