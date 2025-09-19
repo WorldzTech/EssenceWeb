@@ -139,6 +139,14 @@ body {
     background: #F6F4EE;
 }
 
+.bg-breeze-light-white {
+    background: #FBFAF9;
+}
+
 .text-breeze-white {
     color: #F6F4EE;
+}
+
+.text-breeze-light-black {
+    color: #7C7C7B;
 }
